@@ -14,7 +14,7 @@ print(variable_name)
 # my_number = input("Please type an INTEGER number and press enter.\n")
 # print(my_number + 5)
 
-my_number = (input("26\n"))
+my_number = int(input("26\n"))
 print(my_number + 5)
 
 # Wrapper Functions
