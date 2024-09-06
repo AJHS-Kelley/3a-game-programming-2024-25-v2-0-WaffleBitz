@@ -1,6 +1,6 @@
 # Looooooops, Alexander Oropeza-Licona, v0.0
 import random # import the random module for us to use.
-# Generally put all your import statements 
+# Generally put all your import statements at the top.
 
 # TWO TYPES OF LOOPS
 # for <-- used when you know how many loops you'll need.
@@ -49,7 +49,10 @@ import random # import the random module for us to use.
 
 # while loops -- Musical Chairs
 player_score = 0 
+counter = 0
 while player_score < 100: # Run as long as this is True.
     print(f"Starting: {player_score}")
-    player_score += random.randint(1,3)
+    player_score += random.randint(1,100)
     print(f"After: {player_score}")
+    counter += 1
+print (f"Counter: {counter}")
