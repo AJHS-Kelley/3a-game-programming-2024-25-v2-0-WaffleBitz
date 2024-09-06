@@ -22,9 +22,13 @@
 #         continue
 #     print(each_fruit)
 
-# break Keyword -- Immediately exit the loop.
-fruits = ["apple", "banana", "strawberry", "tomato"]
-for each_fruit in fruits:
-    if each_fruit == "banana":
-        break
-    print(each_fruit)
+# # break Keyword -- Immediately exit the loop.
+# fruits = ["apple", "banana", "strawberry", "tomato"]
+# for each_fruit in fruits:
+#     if each_fruit == "banana":
+#         break
+#     print(each_fruit)
+
+# for loops using range().  range(x) is Exclusive, it starts at 0 and ends at x - 1
+for i in range(10): #is 0 - 9
+    print(i)
