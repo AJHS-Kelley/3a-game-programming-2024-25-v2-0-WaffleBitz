@@ -6,8 +6,7 @@ lives = 3
 # Allow the user to input the score as an interger.
 #The program should output the updated number of lives, and the points scored, as a formatted string.
 
-score = 10
-
+score = int(input("Enter Score here.\n"))
 # if score is 10000 or less
 #     Lose a life
 # if score is 10000 but less than 100001
@@ -18,9 +17,14 @@ score = 10
 # Output the score and number of lives to the screen.
 
 if score <= 10000:
-    lives - 1 # Lose a life
-elif score is 10000 < 100001:
-    lives + 1 # Give 1 Extra Life
-else score > 100000
-#     Give 2 Extra Lives
-print(str(lives)) # can convert INTEGER TO STRING.
+    lives -= 1
+    print("-1up\n") # Lose a life
+elif score < 100001:
+    lives += 1
+    print("+1up\n") # Give 1 Extra Life
+elif score > 100000: # Give 2 Extra Lives
+    lives+= 2
+    print("+2ups\n") # can convert INTEGER TO STRING.
+
+print("Lives: " + str(lives))
+print("Score: " + str(score))
