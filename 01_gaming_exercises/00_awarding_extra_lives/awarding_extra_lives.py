@@ -2,6 +2,17 @@
 
 
 lives = 3
+# score = 10001
+# name = "Alex"
+
+# print(f"Hello {name}! You scored {score} points.\n")
+
+
+# CHARACTER REFERENCE
+# CURLY BRACES {}
+# BRACKETS []
+# ANGLES-BRACKETS <>
+# PARENTHESIS ()
 
 # Allow the user to input the score as an interger.
 #The program should output the updated number of lives, and the points scored, as a formatted string.
