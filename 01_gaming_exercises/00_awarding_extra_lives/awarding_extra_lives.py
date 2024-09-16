@@ -34,7 +34,7 @@ elif score < 100001:
     lives += 1
     print("+1up\n") # Give 1 Extra Life
 elif score > 100000: # Give 2 Extra Lives
-    lives+= 2
+    lives += 2
     print("+2ups\n") # can convert INTEGER TO STRING.
 
 print("Lives: " + str(lives))
