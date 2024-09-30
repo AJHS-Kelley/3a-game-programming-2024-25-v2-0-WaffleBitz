@@ -45,55 +45,66 @@ while loop_count < loops_req:
         exit()
 # compare player choice to cpu choice
     if player_choice == "rock" and cpu_choice == "paper":
-        print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        print("The CPU wins a point.\n")
-        cpu_score += 1
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("The CPU wins a point.\n")
+        # cpu_score += 1
+        cpu_score = cpu_score + 1
     # CPU WINS
     elif player_choice == "rock" and cpu_choice == "scissors":
-        print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        print("You win a point.\n")
-        player_score += 1
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("You win a point.\n")
+        # player_score += 1
+        player_score = player_score + 1
     # PLAYER WINS
     elif player_choice == "rock" and cpu_choice == "rock":
-        print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        print("DRAW.\n")
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("DRAW.\n")
     # DRAW
+        # num_draws += 1
+        num_draws = num_draws + 1
     elif player_choice == "scissors" and cpu_choice == "rock":
-        print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        print("The CPU wins a point.\n")
-        cpu_score += 1
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("The CPU wins a point.\n")
+        # cpu_score += 1
+        cpu_score = cpu_score + 1
     # CPU WINS
     elif player_choice == "scissors" and cpu_choice == "paper":
-        print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        print("You win a point.\n")
-        player_score += 1
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("You win a point.\n")
+        # player_score += 1
+        player_score = player_score + 1
     # PLAYER WINS
     elif player_choice == "scissors" and cpu_choice == "scissors":
-        print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        print("DRAW.\n")
-        num_draws += 1
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("DRAW.\n")
+        # num_draws += 1
+        num_draws = num_draws + 1
     # DRAW
     elif player_choice == "paper" and cpu_choice == "scissors":
-        print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        print("The CPU wins a point.\n")
-        cpu_score += 1
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("The CPU wins a point.\n")
+        # cpu_score += 1
+        cpu_score = cpu_score + 1
     # CPU WINS  
     elif player_choice == "paper" and cpu_choice == "rock":
-        print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        print("You win a point.\n")
-        player_score += 1
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("You win a point.\n")
+        # player_score += 1
+        player_score = player_score + 1
     # PLAYER WINS
     elif player_choice == "paper" and cpu_choice == "paper":
-        print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        print("DRAW.\n")
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("DRAW.\n")
     # DRAW
+        # num_draws += 1
+        num_draws = num_draws + 1
     else:
         print("Unable to determine a WINNER. Please Restart.\n")
         exit()
     loop_count += 1
 
 
-print(f"Your Final Score: {player_score} CPU Final Score: {cpu_score}\nDraws: {num_draws}\n")
+print(f"Player Final Score: {player_score} CPU Final Score: {cpu_score}\nDraws: {num_draws}\n")
 if player_score > cpu_score:
     print(f"Congratulations! , you won!\n")
 elif cpu_score > player_score:
@@ -105,4 +116,4 @@ else:
 rps_time_stop = time.time()
 rps_time = rps_time_stop - rps_time_start
 print(f"Number of Loops: {loop_count}\n")
-print(f"Execution Time: {loop_count}\n")
+print(f"Execution Time: {rps_time:.2F}\n")
