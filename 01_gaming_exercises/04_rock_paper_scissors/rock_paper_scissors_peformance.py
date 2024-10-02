@@ -44,25 +44,7 @@ while loop_count < loops_req:
         print("Unable to determine CPU choice.. \nPlease restart.\n")
         exit()
 # compare player choice to cpu choice
-    if player_choice == "rock" and cpu_choice == "paper":
-        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        # print("The CPU wins a point.\n")
-        # cpu_score += 1
-        cpu_score = cpu_score + 1
-    # CPU WINS
-    elif player_choice == "rock" and cpu_choice == "scissors":
-        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        # print("You win a point.\n")
-        # player_score += 1
-        player_score = player_score + 1
-    # PLAYER WINS
-    elif player_choice == "rock" and cpu_choice == "rock":
-        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
-        # print("DRAW.\n")
-    # DRAW
-        # num_draws += 1
-        num_draws = num_draws + 1
-    elif player_choice == "scissors" and cpu_choice == "rock":
+    if player_choice == "scissors" and cpu_choice == "rock":
         # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
         # print("The CPU wins a point.\n")
         # cpu_score += 1
@@ -74,11 +56,11 @@ while loop_count < loops_req:
         # player_score += 1
         player_score = player_score + 1
     # PLAYER WINS
-    elif player_choice == "scissors" and cpu_choice == "scissors":
+    elif player_choice == "rock" and cpu_choice == "scissors":
         # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
         # print("DRAW.\n")
         # num_draws += 1
-        num_draws = num_draws + 1
+        player_score = player_score + 1
     # DRAW
     elif player_choice == "paper" and cpu_choice == "scissors":
         # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
@@ -91,6 +73,24 @@ while loop_count < loops_req:
         # print("You win a point.\n")
         # player_score += 1
         player_score = player_score + 1
+    # PLAYER WINS
+    elif player_choice == "rock" and cpu_choice == "paper":
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("DRAW.\n")
+    # DRAW
+        # num_draws += 1
+        player_score = player_score + 1
+    elif player_choice == "rock" and cpu_choice == "rock":
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("The CPU wins a point.\n")
+        # cpu_score += 1
+        num_draws = num_draws + 1
+    # CPU WINS
+    elif player_choice == "scissors" and cpu_choice == "scissors":
+        # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
+        # print("You win a point.\n")
+        # player_score += 1
+        num_draws = num_draws + 1
     # PLAYER WINS
     elif player_choice == "paper" and cpu_choice == "paper":
         # print(f"The CPU chose {cpu_choice} and you chose {player_choice}.\n")
