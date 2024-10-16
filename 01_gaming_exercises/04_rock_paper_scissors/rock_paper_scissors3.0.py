@@ -13,17 +13,21 @@ cpu_score = 0
 cpu_choice = None
 
 # PLAYER NAME INPUT
-player_name = input("Type in your name here and press enter.\n")
-print(f"Hello {player_name}!\n")
-is_correct = input("Is that correct? Type yes or no and press enter.\n").lower()
-
-# .lower() can turn ALL input into lowercase.
-# .upper() can turn ALL input into UPPERCASE.
-
-if is_correct == "yes":
-    pass
-else:
+def playerName(): # Function Signature -- name of function, (arguments if any)
     player_name = input("Type in your name here and press enter.\n")
+    print(f"Hello {player_name}!\n")
+    is_correct = input("Is that correct? Type yes or no and press enter.\n").lower()
+
+    # .lower() can turn ALL input into lowercase.
+    # .upper() can turn ALL input into UPPERCASE.
+
+    if is_correct == "yes":
+        pass
+    else:
+        player_name = input("Type in your name here and press enter.\n")
+
+# CALLING THE FUNCTION
+playerName()
 
 # THE RULES using MULTI-LINE STRINGS
 print(f"""
