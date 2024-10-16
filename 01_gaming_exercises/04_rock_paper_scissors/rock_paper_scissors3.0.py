@@ -25,6 +25,7 @@ def playerName(): # Function Signature -- name of function, (arguments if any)
         pass
     else:
         player_name = input("Type in your name here and press enter.\n")
+    return player_name
 
 # CALLING THE FUNCTION
 playerName()
