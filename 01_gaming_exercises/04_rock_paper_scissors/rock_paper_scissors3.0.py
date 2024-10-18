@@ -1,4 +1,4 @@
-# Rock, Paper, Scissors by Alexander Oropeza-Licona, v3.1
+# Rock, Paper, Scissors by Alexander Oropeza-Licona, v3.2
 
 # MODULE IMPORTS
 import random
@@ -131,6 +131,18 @@ def pickWinner(player_choice: str, cpu_choice: str) -> str: # player_choice and 
         print("Unable to determine a WINNER. Please Restart.\n")
         exit()
     # return statements IMMEDIATELY exit a function. 
+
+def score(winner: str) -> int:
+    """This function uses the winnerto update the score for CPU, Num, DRAWS, and player score."""
+    if winner == "Player Wins":
+        score = 1
+    elif winner == "CPU Wins":
+        score = 1
+    else: # This is a DRAW.
+        score = 0
+    return score
+
+
 
 # MAIN GAME LOOP
 while player_score < 5 and cpu_score < 5:
