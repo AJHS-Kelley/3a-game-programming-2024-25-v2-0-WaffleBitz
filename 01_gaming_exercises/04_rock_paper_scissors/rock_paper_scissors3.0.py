@@ -128,9 +128,9 @@ def pickWinner(player_choice: str, cpu_choice: str) -> str: # player_choice and 
 
 def score(winner: str) -> int:
     """This function uses the winnerto update the score for CPU, Num, DRAWS, and player score."""
-    if winner == "Player Wins":
+    if winner == "Player Wins.":
         score = 1
-    elif winner == "CPU Wins":
+    elif winner == "CPU Wins.":
         score = 1
     else: # This is a DRAW.
         score = 0
@@ -157,9 +157,9 @@ def playGame(player_score: int, cpu_score: int) -> None:
         cpu_pick = cpuChoice()
         player_pick = playerChoice()
         round_winner = pickWinner(player_pick, cpu_pick)
-        if round_winner == "Player Wins":
+        if round_winner == "Player Wins.":
             player_score += score(round_winner)
-        if round_winner == "CPU Wins":
+        if round_winner == "CPU Wins.":
             cpu_score += score(round_winner)
 
         print(f"Player Score: {player_score}\n")
