@@ -12,7 +12,7 @@ def displayIntro():
     print('Choose Carefully...')
     print()
 
-def choosePath():
+def choosePath(): # Just figure out which path number.  
     path = ''
     while path != '1' and path != '2':
         print('Which path will you go into? (Mountain = 1 or Forest = 2)')
@@ -34,37 +34,25 @@ def choosePath():
                 print()
                 time.sleep(2)
         else:
-             input("Type in a valid location here and press enter.\n")
-             print(choosePath)
+            input("Type in a valid location here and press enter.\n")
+            print(choosePath)
 
+print(choosePath) 
 
-# def introChosenPath(choosePath):
-#     if choosePath == '1':
-#         print('You have chosen to go up the mountain. In front of you,')
-#         print('you see two caves. In one cave, the dragon is friendly')
-#         print('and will share his treasure with you. The other dragon')
-#         print('is greedy and hungry, and will eat you on sight.')
-#         print()
-#     elif choosePath == '2':
-#         print('You have chosen to go to the forest. In front of you,')
-#         print('you see an axe in a tree stump.')
-#         print('you look around to make sure no one is in the area.')
-#         print('you take a gamble and aproach the axe.')
-#         print()
-         
-
-def cavePath(cave)-> int:
+def cavePath()-> int:
         print('You have chosen to go up the mountain. In front of you,')
         print('you see two caves. In one cave, the dragon is friendly')
         print('and will share his treasure with you. The other dragon')
         print('is greedy and hungry, and will eat you on sight.')
         print()
-        cave_choice = ''
+        # cave_choice = ''
         while cave != '1' and cave != '2':
             print('Which cave will you go into? (1 or 2)')
         cave = input()
         return cave
 
+def forestPath():
+    print("Code not done yet")
 # def checkCave(chosenCave):
 #     print('You approach the cave...')
 #     time.sleep(2)
@@ -88,9 +76,12 @@ playAgain = 'yes'
 
 while playAgain == 'yes' or playAgain == 'y':
     displayIntro()
+
     pathNumber = choosePath()
-    if choosePath == "1": # Mountain
-        pass
-    (pathNumber)
+    if pathNumber == '1': # Mountain
+        cavePath()
+    elif pathNumber == '2': # Forest
+        forestPath()
+    # (pathNumber)
     print('Do you want to play again? (yes or no)')
     playAgain = input()
