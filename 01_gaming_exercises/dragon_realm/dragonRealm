@@ -104,4 +104,4 @@ while playAgain == 'yes' or playAgain == 'y':
 
 
 # CLOSE THE FILE
-    save_data.close()
+save_data.close()
