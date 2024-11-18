@@ -3,6 +3,22 @@
 
 import random
 import time
+import datetime 
+
+# SAVING DATA TO A FILE
+# STEP 1 -- Create the file name to use.
+log_file_name = "dragon_realm_log" + str(time.time()) + ".txt"
+# log_file_name = "dragon_realm_log"
+# Example: dragon_realm_log1132AM.txt
+
+# STEP 2 -- Create / Open the file to save data.
+save_data = open(log_file_name, "x")
+# FILE MODES
+# "x" CREATES FILE, IF EXISTS, EXIT WITH ERROR MESSAGE
+# "w" CREATES FILE, IF EXISTS, ERASE AND OVERWRITE FILE CONTENTS
+# "a" CREATES FILE, IF EXISTS, APPEND DATA TO THE FILE
+
+save_data.write("GAME STARTED" + " " + str(datetime.datetime.now()) + "\n")
 
 def displayIntro():
 
@@ -85,3 +101,7 @@ while playAgain == 'yes' or playAgain == 'y':
     # (pathNumber)
     print('Do you want to play again? (yes or no)')
     playAgain = input()
+
+
+# CLOSE THE FILE
+    save_data.close()
