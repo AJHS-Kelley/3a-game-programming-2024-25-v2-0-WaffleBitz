@@ -12,7 +12,7 @@ log_file_name = "dragon_realm_log" + str(time.time()) + ".txt"
 # Example: dragon_realm_log1132AM.txt
 
 # STEP 2 -- Create / Open the file to save data.
-save_data = open(log_file_name, "x")
+save_data = open(log_file_name, "a")
 # FILE MODES
 # "x" CREATES FILE, IF EXISTS, EXIT WITH ERROR MESSAGE
 # "w" CREATES FILE, IF EXISTS, ERASE AND OVERWRITE FILE CONTENTS
@@ -52,8 +52,6 @@ def choosePath(): # Just figure out which path number.
         else:
             input("Type in a valid location here and press enter.\n")
             print(choosePath)
-
-print(choosePath) 
 
 def cavePath()-> int:
         print('You have chosen to go up the mountain. In front of you,')
@@ -104,4 +102,5 @@ while playAgain == 'yes' or playAgain == 'y':
 
 
 # CLOSE THE FILE
+save_data.write("END OF GAME LOG\n\n")
 save_data.close()
