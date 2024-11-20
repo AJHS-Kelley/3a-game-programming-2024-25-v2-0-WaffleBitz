@@ -1,14 +1,14 @@
 # Dragon Realm, <Alexander Oropeza>, v0.0
 # Based on https://inventwithpython.com/chapter6.html by Al Sweigart
 
-import random
+import random # You haven't used this module yet.  If you don't need it, remove this line. 
 import time
 import datetime 
 
 # SAVING DATA TO A FILE
 # STEP 1 -- Create the file name to use.
-log_file_name = "dragon_realm_log" + str(time.time()) + ".txt"
-# log_file_name = "dragon_realm_log"
+#log_file_name = "dragon_realm_log" + str(time.time()) + ".txt"
+log_file_name = "dragon_realm_log.txt" # Use this line instead of Line 10. 
 # Example: dragon_realm_log1132AM.txt
 
 # STEP 2 -- Create / Open the file to save data.
