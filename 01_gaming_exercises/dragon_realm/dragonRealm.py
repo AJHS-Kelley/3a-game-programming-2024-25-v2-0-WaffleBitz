@@ -1,6 +1,6 @@
 # Dragon Realm, <Alexander Oropeza>, v0.0
 # Based on https://inventwithpython.com/chapter6.html by Al Sweigart
-
+# 2024-12-09 -- Code Check -- 95%.  Well Done Alex! 
 import random # You haven't used this module yet.  If you don't need it, remove this line. 
 import time
 import datetime 
